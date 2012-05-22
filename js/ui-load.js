@@ -1,8 +1,5 @@
 ﻿$(window).load(function () {
-    if ($.cookie('defaultsmwidth')) {
-        var width = $.cookie('defaultsmwidth');
-        resizeSMSection(width);
-    }
+    resizeSMSection(60);
     if ($.cookie('sidebar') && $.cookie('username') && $.cookie('password')) {
         $('#SideBar').show();
         updateChatMessages();
@@ -41,7 +38,7 @@ function resizeContent() {
     $('#player').css({ 'width': tabwidth + 'px' });
 }
 function resizeSMSection(x) {
-    var defwidth = 350;
+    var defwidth = 200;
     var smwidth = $('.smsection').width();
     var newsmwidth = smwidth + parseInt(x);
     var newwidth = newsmwidth - defwidth;
