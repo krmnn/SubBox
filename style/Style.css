@@ -1098,3 +1098,13 @@ label
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(200,200,200,0.4); 
 }
+
+#PreviousTrack
+{
+	top: -10px;
+}
+
+#NextTrack
+{
+	top: -10px;
+{
