@@ -79,22 +79,22 @@ h3.title
 
 #btnLibrary
 {
-    background: url('../images/headphones_gd_16x14.png') no-repeat center 50%;
+    background: url('../images/headphones_32x28.png') no-repeat center 50%;
 }
 
 #btnCurrent
 {
-    background: url('../images/play_alt_gd_16x16.png') no-repeat center 50%;
+    background: url('../images/play_alt_32x32.png') no-repeat center 50%;
 }
 
 #btnPlaylists
 {
-    background: url('../images/list_gd_16x14.png') no-repeat center 50%;
+    background: url('../images/list_32x28.png') no-repeat center 50%;
 }
 
 #btnPreferences
 {
-    background: url('../images/cog_16x16.png') no-repeat center 50%;
+    background: url('../images/cog_32x32.png') no-repeat center 50%;
 }
 
 #nav a:hover  
