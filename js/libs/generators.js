@@ -8,12 +8,12 @@ function generateAlbumHTML(rowcolor, childid, parentid, coverart, title, artist,
     html = '<tr class=\"album ' + rowcolor + '\" childid=\"' + childid + '\" parentid=\"' + parentid + '\" userrating=\"' + rating + '\">';
     html += '<td class=\"itemactions\"><a class=\"add\" href=\"\" title=\"Add To Current Playlist\"></a>';
     html += '<a class=\"play\" href=\"\" title=\"Play\"></a>';
-    html += '<a class=\"download\" href=\"\" title=\"Download\"></a>';
-    if (rating === 5) {
-        html += '<a class=\"favorite\" href=\"\" title=\"Favorite\"></a>';
-    } else {
-        html += '<a class=\"rate\" href=\"\" title=\"Add To Favorites\"></a>';
-    }
+//    html += '<a class=\"download\" href=\"\" title=\"Download\"></a>';
+//    if (rating === 5) {
+//        html += '<a class=\"favorite\" href=\"\" title=\"Favorite\"></a>';
+//    } else {
+//        html += '<a class=\"rate\" href=\"\" title=\"Add To Favorites\"></a>';
+//    }
     html += '</td>';
     if (coverart == undefined) {
         html += '<td class=\"albumart\"><img src=\"images/albumdefault_50.jpg\" /></td>';
@@ -36,12 +36,12 @@ function generateSongHTML(rowcolor, childid, parentid, track, title, artist, alb
     html += '<td class=\"itemactions\"><a class=\"add\" href=\"\" title=\"Add To Current Playlist\"></a>';
     html += '<a class=\"remove\" href=\"\" title=\"Remove\"></a>';
     html += '<a class=\"play\" href=\"\" title=\"Play\"></a>';
-    html += '<a class=\"download\" href=\"\" title=\"Download\"></a>';
-    if (rating === 5) {
-        html += '<a class=\"favorite\" href=\"\" title=\"Favorite\"></a>';
-    } else {
-        html += '<a class=\"rate\" href=\"\" title=\"Add To Favorites\"></a>';
-    }
+//    html += '<a class=\"download\" href=\"\" title=\"Download\"></a>';
+//    if (rating === 5) {
+//        html += '<a class=\"favorite\" href=\"\" title=\"Favorite\"></a>';
+//    } else {
+//        html += '<a class=\"rate\" href=\"\" title=\"Add To Favorites\"></a>';
+//    }
     html += '</td>';
     html += '<td class=\"track\">' + track + '</td>';
     html += '<td class=\"title\">' + title + '</td>';
