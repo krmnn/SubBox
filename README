@@ -1,8 +1,8 @@
 
-A modification to tsquillario's MiniSub player for touchscreen devices.
+SubBox - A modification to tsquillario's MiniSub player for touchscreen jukebox devices.
 
 - more touch-friendly interface (larger buttons, etc)
-- removed all the functions that need text-input 
+- removed all the functions that need text-input (except preferences) 
 
 
 
