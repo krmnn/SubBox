@@ -84,7 +84,7 @@ h3.title
 
 #btnCurrent
 {
-    background: url('../images/play_alt_32x32.png') no-repeat center 50%;
+    background: url('../images/play_alt_dark_32x32.png') no-repeat center 50%;
 }
 
 #btnPlaylists
@@ -251,11 +251,20 @@ ul.simplelist
 }
 ul.simplelist li
 {
-    font-size: 13px;
+    font-size: 20px;
     cursor: pointer;
-    padding: 8px;
+    padding: 10px;
     border-bottom: 1px solid #f2f2f2;
 }
+ul.simplelist li.item
+{
+
+}
+ul.simplelist li.item span
+{
+	vertical-align: middle;
+}
+
 ul.simplelist li a
 {
     text-decoration: none;
@@ -274,6 +283,7 @@ ul.simplelist li.index
     font-weight: bold;
     margin: 2px 0;
     padding: 1px 4px;
+	vertical-align: middle;
 }
 ul.simplelist li.index a
 {
@@ -286,28 +296,28 @@ ul.mainlist li.selected
 }
 ul.mainlist li.item a.play
 {
-    width: 50px;
-    height: 18px;
+    width: 32px;
+    height: 32px;
     display: block;
-    margin: 0 5px 0 0;
+    margin: 0;
     background: url('../images/play_24x32.png') no-repeat center 50%;
 }
 ul.mainlist li.item a.play:hover
 {
-    background: url('../images/play_24x32.png') no-repeat center 50% #DEECFB;
+    background: url('../images/play_dark_24x32.png') no-repeat center 50%;
 }
 
 ul.mainlist li.item a.add
 {
-    width: 20px;
-    height: 18px;
+    width: 32px;
+    height: 32px;
     display: block;
     margin: 0 5px 0 0;
     background: url('../images/plus_32x32.png') no-repeat center 50%;
 }
 ul.mainlist li.item a.add:hover
 {
-    background: url('../images/plus_32x32.png') no-repeat center 50% #DEECFB;
+    background: url('../images/plus_dark_32x32.png') no-repeat center 50%;
 }
 #AlbumContainer
 {
@@ -324,7 +334,7 @@ ul.mainlist li.item a.add:hover
 #CurrentPlaylistContainer tr.song a.remove
 {
     width: 50px;
-    height: 20px;
+    height: 50px;
     display: block;
     float: left;
     margin: 0;
@@ -332,7 +342,7 @@ ul.mainlist li.item a.add:hover
 }
 #CurrentPlaylistContainer tr.song a.remove:hover
 {
-    background: url('../images/minus_32x8.png') no-repeat center 50% #DEECFB;
+    background: url('../images/minus_dark_32x8.png') no-repeat center 50%;
 }
 #BreadCrumb a
 {
@@ -350,7 +360,7 @@ table.songlist
 }
 table.songlist th
 {
-    font-size: 14px;
+    font-size: 20px;
     font-variant: small-caps;
     padding: 5px 4px;
 }
@@ -360,7 +370,7 @@ table.songlist tr:hover
 }
 table.songlist tr.album
 {
-    font-size: 13px;
+    font-size: 20px;
     border-bottom: 1px solid #f0f0f0;
     cursor: pointer;
 }
@@ -400,7 +410,7 @@ table.songlist tr.album a.play
 }
 table.songlist tr.album a.play:hover
 {
-    background: url('../images/play_24x32.png') no-repeat center 50% #DEECFB;
+    background: url('../images/play_dark_24x32.png') no-repeat center 50%;
 }
 table.songlist tr.album a.add
 {
@@ -412,7 +422,7 @@ table.songlist tr.album a.add
 }
 table.songlist tr.album a.add:hover
 {
-    background: url('../images/plus_32x32.png') no-repeat center 50% #DEECFB;
+    background: url('../images/plus_dark_32x32.png') no-repeat center 50%;
 }
 
 
@@ -423,7 +433,7 @@ table.songlist tr.song
 }
 table.songlist tr.song td
 {
-    font-size: 13px;
+    font-size: 20px;
     padding: 9px 10px;
 }
 table.songlist tr.song td.itemactions
@@ -475,11 +485,11 @@ table.songlist tr.song a.play
     height: 50px;
     display: block;
     margin: 0;
-    background: url('../images/play_gl_6x8.png') no-repeat center 50%;
+    background: url('../images/play_24x32.png') no-repeat center 50%;
 }
 table.songlist tr.song a.play:hover
 {
-    background: url('../images/play_6x8.png') no-repeat center 50% #DEECFB;
+    background: url('../images/play_dark_24x32.png') no-repeat center 50%;
 }
 
 table.songlist tr.song a.add
@@ -489,30 +499,31 @@ table.songlist tr.song a.add
     height: 50px;
     display: block;
     margin: 0;
-    background: url('../images/plus_gl_8x8.png') no-repeat center 50%;
+    background: url('../images/plus_32x32.png') no-repeat center 50%;
 }
 table.songlist tr.song a.add:hover
 {
-    background: url('../images/plus_8x8.png') no-repeat center 50% #DEECFB;
+    background: url('../images/plus_dark_32x32.png') no-repeat center 50%;
 }
 
 table.songlist tr.playing
 {
     background-color: #DEEBFA;
+	color: #000000;
+	font-style: italic;
 }
-table.songlist tr.playing td:first-child
-{
-    background: url('../images/play_alt_gd_16x16.png') 8px 11px no-repeat;
-}
+
 table.songlist tr.selected
 {
+	width: 50px;
+	height: 50px;
     color: #f2f2f2;
     border-bottom: 1px solid #73ABE7;
     background-color: #4B95E5;
 }
 table.songlist tr.selected td:first-child
 {
-    background: url('../images/check_8x7.png') 10px 16px no-repeat;
+    background: url('../images/check_32x32.png') no-repeat center 50%;
 }
 table.songlist tr.selected td.album a
 {
@@ -1047,7 +1058,9 @@ select#SearchType
 }
 select#MusicFolders
 {
-    width: 94%;
+    width: 100%;
+	margin: 0;
+	margin-bottom: 10px;
 }
 .submit
 {
@@ -1084,6 +1097,7 @@ label
 /* Let's get this party started */
 ::-webkit-scrollbar {
     width: 42px;
+	height: 42px;
 }
  
 /* Track */
@@ -1093,7 +1107,7 @@ label
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgba(200,200,200,0.8); 
+    background: rgba(75,149,229,0.8); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(200,200,200,0.4); 
