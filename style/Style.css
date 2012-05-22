@@ -59,7 +59,7 @@ h3.title
 }
 #nav li 
 {
-    width: 50px;
+    width: 150px;
 }
 #nav a 
 {
@@ -70,11 +70,33 @@ h3.title
     font-weight: bold;
     font-size: 17px;
 	text-decoration: none;
-	background: #f4f4f4;
+	background-color: #f4f4f4;
     border: 1px solid #E4E4E4;
     border-right: 1px solid #D5D5D5;
     border-bottom: none;
+	height: 120px;
 }
+
+#btnLibrary
+{
+    background: url('../images/headphones_gd_16x14.png') no-repeat center 50%;
+}
+
+#btnCurrent
+{
+    background: url('../images/play_alt_gd_16x16.png') no-repeat center 50%;
+}
+
+#btnPlaylists
+{
+    background: url('../images/list_gd_16x14.png') no-repeat center 50%;
+}
+
+#btnPreferences
+{
+    background: url('../images/cog_16x16.png') no-repeat center 50%;
+}
+
 #nav a:hover  
 {
     color: #545454; 
@@ -103,7 +125,7 @@ h3.title
 #nav a.active  
 {
     color: #545454; 
-    background: #ffffff; 
+    background-color: #ffffff; 
 	border: 1px solid #CBCBCB;
 	border-right: none;
 }
@@ -139,7 +161,7 @@ h3.title
 {
     min-height: 400px;
     min-width: 700px;
-    margin-left: 53px;
+    margin-left: 153px;
 }
 .smsection
 {
@@ -153,7 +175,7 @@ h3.title
     border-right: 1px solid #cbcbcb;
     position: absolute;
     top: 39px;
-    left: 60px;
+    left: 160px;
 }
 .lgsection
 {
@@ -365,7 +387,7 @@ table.songlist tr.album td.artist
 }
 table.songlist tr.album td.itemactions
 {
-    width: 85px;
+    width: 100px;
     padding-left: 10px;
 }
 table.songlist tr.album td.albumart
@@ -382,64 +404,29 @@ table.songlist tr.album td.albumart img
 table.songlist tr.album a.play
 {
     float: left;
-    width: 20px;
+    width: 50px;
     height: 50px;
     display: block;
-    background: url('../images/play_gl_6x8.png') no-repeat 7px center;
+    background: url('../images/play_gl_6x8.png') no-repeat center 50%;
 }
 table.songlist tr.album a.play:hover
 {
-    background: url('../images/play_6x8.png') no-repeat 7px center #DEECFB;
+    background: url('../images/play_6x8.png') no-repeat center 50% #DEECFB;
 }
 table.songlist tr.album a.add
 {
     float: left;
-    width: 20px;
+    width: 50px;
     height: 50px;
     display: block;
-    background: url('../images/plus_gl_8x8.png') no-repeat 6px center;
+    background: url('../images/plus_gl_8x8.png') no-repeat center 50%;
 }
 table.songlist tr.album a.add:hover
 {
-    background: url('../images/plus_8x8.png') no-repeat 6px center #DEECFB;
+    background: url('../images/plus_8x8.png') no-repeat center 50% #DEECFB;
 }
-table.songlist tr.album a.download
-{
-    float: left;
-    width: 20px;
-    height: 50px;
-    display: block;
-    background: url('../images/download_gl_9x12.png') no-repeat 5px center;
-}
-table.songlist tr.album a.download:hover
-{
-    background: url('../images/download_gd_9x12.png') no-repeat 5px center #DEECFB;
-}
-table.songlist tr.album a.remove
-{
-    display: none;
-}
-table.songlist tr.album a.rate
-{
-    float: left;
-	height: 50px;
-    width: 20px;
-    display: block;
-	background: url('../images/star_wo_12x12.png') 2px center no-repeat;	
-}
-table.songlist tr.album a.rate:hover
-{
-    background: url('../images/star_lgo_12x12.png') 2px center no-repeat;
-}
-table.songlist tr.album a.favorite
-{
-    float: left;
-	height: 50px;
-    width: 20px;
-    margin: 0 5px 0 0;
-    display: block;
-	background: url('../images/star_yo_12x12.png') 2px center no-repeat;	
-}
+
+
 table.songlist tr.song
 {
     cursor: pointer;
@@ -452,7 +439,7 @@ table.songlist tr.song td
 }
 table.songlist tr.song td.itemactions
 {
-    width: 80px;
+    width: 100px;
     padding-left: 27px;
 }
 table.songlist tr.song td.track
@@ -495,63 +482,31 @@ table.songlist tr.song td.time
 table.songlist tr.song a.play
 {
     float: left;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     display: block;
     margin: 0;
-    background: url('../images/play_gl_6x8.png') no-repeat 7px center;
+    background: url('../images/play_gl_6x8.png') no-repeat center 50%;
 }
 table.songlist tr.song a.play:hover
 {
-    background: url('../images/play_6x8.png') no-repeat 7px center #DEECFB;
+    background: url('../images/play_6x8.png') no-repeat center 50% #DEECFB;
 }
-table.songlist tr.song a.download
-{
-    float: left;
-    width: 20px;
-    height: 20px;
-    display: block;
-    background: url('../images/download_gl_9x12.png') no-repeat 5px center;
-}
-table.songlist tr.song a.download:hover
-{
-    background: url('../images/download_gd_9x12.png') no-repeat 5px center #DEECFB;
-}
+
 table.songlist tr.song a.add
 {
     float: left;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     display: block;
     margin: 0;
-    background: url('../images/plus_gl_8x8.png') no-repeat 6px center;
+    background: url('../images/plus_gl_8x8.png') no-repeat center 50%;
 }
 table.songlist tr.song a.add:hover
 {
-    background: url('../images/plus_8x8.png') no-repeat 6px center #DEECFB;
+    background: url('../images/plus_8x8.png') no-repeat center 50% #DEECFB;
 }
-table.songlist tr.song a.rate
-{
-    float: left;
-	height: 20px;
-    width: 20px;
-    margin: 0;
-    display: block;
-	background: url('../images/star_wo_12x12.png') center 3px no-repeat;	
-}
-table.songlist tr.song a.rate:hover
-{
-    background: url('../images/star_lgo_12x12.png') center 3px no-repeat;
-}
-table.songlist tr.song a.favorite
-{
-    float: left;
-	height: 20px;
-    width: 20px;
-    margin: 0;
-    display: block;
-	background: url('../images/star_yo_12x12.png') center 3px no-repeat;	
-}
+
 table.songlist tr.playing
 {
     background-color: #DEEBFA;
@@ -792,7 +747,7 @@ background-color: #8dbdd8;
     background: #fff;
     border: 1px solid #cbcbcb;
     margin: 2px 0 5px 0;
-    margin-left: 53px;
+    margin-left: 153px;
 }
 #audiocontainer
 {
@@ -1134,4 +1089,23 @@ label
 {
     float: left;
     margin: 5px 5px 0 5px;
+}
+
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 42px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(200,200,200,0.8); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(200,200,200,0.4); 
 }
