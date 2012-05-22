@@ -1,3 +1,15 @@
+
+A modification to tsquillario's MiniSub player for touchscreen devices.
+
+- more touch-friendly interface (larger buttons, etc)
+- removed all the functions that need text-input 
+
+
+
+
+
+Original description:
+
 MiniSub - HTML5 Mini Player for Subsonic
 
 Imagine you can stream all your music from home, to any device, where ever you are. That is Subsonic! Now imagine having a Web App to stream your music that is as beautiful and well designed as it is functional, that is MiniSub!
