@@ -117,7 +117,7 @@ function playSong(el, songid, albumid) {
 
             $('table.songlist tr.song').removeClass('playing');
             $(el).addClass('playing');
-            $('#PlayTrack').find('img').attr('src', 'images/pause_24x32.png');
+            $('#PlayTrack').find('img').attr('src', 'images/pause.png');
             $('#PlayTrack').addClass('playing');
             scrobbleSong(false);
             scrobbled = false;
@@ -167,12 +167,12 @@ function rateSong(songid, rating) {
 function playPauseSong() {
     var el = '#PlayTrack';
     if ($(el).hasClass('playing')) {
-        $(el).find('img').attr('src', 'images/play_24x32.png');
+        $(el).find('img').attr('src', 'images/play.png');
         $(el).removeClass('playing');
         $(el).addClass('paused');
         soundManager.pause('audio');
     } else if ($(el).hasClass('paused')) {
-        $(el).find('img').attr('src', 'images/pause_24x32.png');
+        $(el).find('img').attr('src', 'images/pause.png');
         $(el).removeClass('paused');
         $(el).addClass('playing');
         soundManager.resume('audio');
@@ -180,7 +180,7 @@ function playPauseSong() {
         // Start playing song
         var play = $('#CurrentPlaylistContainer tr.selected').first();
         if (changeTrack(play)) {
-            $(el).find('img').attr('src', 'images/pause_24x32.png');
+            $(el).find('img').attr('src', 'images/pause.png');
             $(el).addClass('playing');
         } else {
             var first = $('#CurrentPlaylistContainer tr').first();
