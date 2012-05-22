@@ -1,7 +1,7 @@
 body 
 {
 	font: 100% Trebuchet MS, Arial, Helvetica, sans-serif;
-	background: #fafafa;
+	background-color: #fafafa;
 	margin: 0;
 	padding: 0;
 	text-align: center; 
@@ -31,8 +31,8 @@ h3.title
 .alignright { text-align: right; }
 .aligncenter { text-align: center; }
 .padright { padding: 0 10px 0 0; }
-.odd { background: #fff; }
-.even { background: #f4f4f4; }
+.odd { background-color: #fff; }
+.even { background-color: #f4f4f4; }
 .red { color: #E64F4C; }
 .italic { font-style: italic; }
 
@@ -148,7 +148,7 @@ h3.title
 
 #content 
 {
-    background: #EDEDED;
+    background-color: #EDEDED;
 	overflow: hidden;
 }
 #content h2
@@ -171,7 +171,7 @@ h3.title
     float: left;
     overflow-y: auto;
     overflow-x: hidden;
-    background: #fff;
+    background-color: #fff;
     border-right: 1px solid #cbcbcb;
     position: absolute;
     top: 39px;
@@ -183,7 +183,7 @@ h3.title
     width: 100%;
     min-height: 400px;
     overflow: auto;
-    background: #fff;
+    background-color: #fff;
     border: 1px solid #cbcbcb;
     margin-top: 5px;
 }
@@ -194,7 +194,7 @@ h3.title
     min-width: 450px;
     min-height: 400px;
     overflow: auto;
-    background: #fff;
+    background-color: #fff;
     border: 1px solid #cbcbcb;
     margin-top: 5px;
 }
@@ -238,7 +238,7 @@ h3.title
     z-index: 99;
     top: 0;
     right: 58px;
-    background: #fff;
+    background-color: #fff;
     border: 1px solid #A6CBF3;
     border-top: none;
 }
@@ -263,11 +263,11 @@ ul.simplelist li a
 }
 ul.simplelist li:hover
 {
-    background: #EEF5FD;
+    background-color: #EEF5FD;
 }
 ul.simplelist li.index
 {
-    background: #F0F0F0;
+    background-color: #F0F0F0;
     border-bottom: 1px solid #DDDDDD;
     color: #A7A7A7;
     font-size: 11px;
@@ -286,39 +286,28 @@ ul.mainlist li.selected
 }
 ul.mainlist li.item a.play
 {
-    width: 20px;
+    width: 50px;
     height: 18px;
     display: block;
     margin: 0 5px 0 0;
-    background: url('../images/play_gl_6x8.png') no-repeat 6px center;
+    background: url('../images/play_24x32.png') no-repeat center 50%;
 }
 ul.mainlist li.item a.play:hover
 {
-    background: url('../images/play_6x8.png') no-repeat 6px center #DEECFB;
+    background: url('../images/play_24x32.png') no-repeat center 50% #DEECFB;
 }
-ul.mainlist li.item a.download
-{
-    float: left;
-    width: 20px;
-    height: 18px;
-    display: block;
-    background: url('../images/download_gl_9x12.png') no-repeat 5px center;
-}
-ul.mainlist li.item a.download:hover
-{
-    background: url('../images/download_gd_9x12.png') no-repeat 5px center #DEECFB;
-}
+
 ul.mainlist li.item a.add
 {
     width: 20px;
     height: 18px;
     display: block;
     margin: 0 5px 0 0;
-    background: url('../images/plus_gl_8x8.png') no-repeat 6px center;
+    background: url('../images/plus_32x32.png') no-repeat center 50%;
 }
 ul.mainlist li.item a.add:hover
 {
-    background: url('../images/plus_8x8.png') no-repeat 6px center #DEECFB;
+    background: url('../images/plus_32x32.png') no-repeat center 50% #DEECFB;
 }
 #AlbumContainer
 {
@@ -334,16 +323,16 @@ ul.mainlist li.item a.add:hover
 }
 #CurrentPlaylistContainer tr.song a.remove
 {
-    width: 20px;
+    width: 50px;
     height: 20px;
     display: block;
     float: left;
     margin: 0;
-    background: url('../images/minus_gl_8x2.png') no-repeat 6px center;
+    background: url('../images/minus_32x8.png') no-repeat center 50%;
 }
 #CurrentPlaylistContainer tr.song a.remove:hover
 {
-    background: url('../images/minus_8x2.png') no-repeat 6px center #DEECFB;
+    background: url('../images/minus_32x8.png') no-repeat center 50% #DEECFB;
 }
 #BreadCrumb a
 {
@@ -367,7 +356,7 @@ table.songlist th
 }
 table.songlist tr:hover
 {
-    background: #EEF5FD;
+    background-color: #EEF5FD;
 }
 table.songlist tr.album
 {
@@ -407,11 +396,11 @@ table.songlist tr.album a.play
     width: 50px;
     height: 50px;
     display: block;
-    background: url('../images/play_gl_6x8.png') no-repeat center 50%;
+    background: url('../images/play_24x32.png') no-repeat center 50%;
 }
 table.songlist tr.album a.play:hover
 {
-    background: url('../images/play_6x8.png') no-repeat center 50% #DEECFB;
+    background: url('../images/play_24x32.png') no-repeat center 50% #DEECFB;
 }
 table.songlist tr.album a.add
 {
@@ -419,11 +408,11 @@ table.songlist tr.album a.add
     width: 50px;
     height: 50px;
     display: block;
-    background: url('../images/plus_gl_8x8.png') no-repeat center 50%;
+    background: url('../images/plus_32x32.png') no-repeat center 50%;
 }
 table.songlist tr.album a.add:hover
 {
-    background: url('../images/plus_8x8.png') no-repeat center 50% #DEECFB;
+    background: url('../images/plus_32x32.png') no-repeat center 50% #DEECFB;
 }
 
 
@@ -576,7 +565,7 @@ background-color: #8dbdd8;
 #BottomContainer
 {
     border-top: 1px solid #F2F2F2;
-    background: #fff;
+    background-color: #fff;
     position: fixed;
     height: 43px;
     width: 184px;
@@ -624,7 +613,7 @@ background-color: #8dbdd8;
 .submenu 
 {
     position: absolute;
-    background: #fff;
+    background-color: #fff;
     padding: 5px 10px;
     margin: 2px 0 0 1px;
     z-index:99;
@@ -744,7 +733,7 @@ background-color: #8dbdd8;
 /* Player Style */
 #player
 {
-    background: #fff;
+    background-color: #fff;
     border: 1px solid #cbcbcb;
     margin: 2px 0 5px 0;
     margin-left: 153px;
@@ -774,7 +763,7 @@ background-color: #8dbdd8;
     float: none;
     width: auto;
     position: relative;
-    background: #5A5A5A;
+    background-color: #5A5A5A;
     border-top: 1px solid #3F3F3F;
     border-left: 0px;
     border-bottom: 0px;
@@ -787,7 +776,7 @@ background-color: #8dbdd8;
     left: 0px;
     height: 14px;
     width: 0px;
-    background: #CCC;
+    background-color: #CCC;
     z-index: 1;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #CCC), color-stop(0.5, #DDD), color-stop(0.51, #CCC), color-stop(1, #CCC));
     background-image: -moz-linear-gradient(center top, #CCC 0%, #DDD 50%, #CCC 51%, #CCC 100%);
@@ -799,7 +788,7 @@ background-color: #8dbdd8;
     left: 0px;
     height: 14px;
     width: 0px;
-    background: black;
+    background-color: black;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.5, #333), color-stop(0.51, #222), color-stop(1, #222));
     background-image: -moz-linear-gradient(center top, #222 0%, #333 50%, #222 51%, #222 100%);
 }
@@ -972,7 +961,7 @@ span.code
 #donate
 {
     text-align: center;
-    background: #f2f2f2;
+    background-color: #f2f2f2;
     border: 1px solid #E0E0E0;
     padding: 10px;
 }
@@ -991,7 +980,7 @@ a.button {
     -moz-transition: border .218s;
     -o-transition: border-color .218s;
     transition: border-color .218s;
-    background: #f3f3f3;
+    background-color: #f3f3f3;
     background: -webkit-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
     background: -moz-linear-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
     border: solid 1px #dcdcdc;
