@@ -171,7 +171,6 @@ h3.title
 .smsection
 {
     width: 200px;
-    min-height: 360px;
     padding: 0 0 40px 0;
     float: left;
     overflow-y: auto;
@@ -179,7 +178,7 @@ h3.title
     background-color: #fff;
     border-right: 1px solid #cbcbcb;
     position: absolute;
-    top: 39px;
+    top: 21px;
     left: 160px;
 }
 .lgsection
