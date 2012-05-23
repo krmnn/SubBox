@@ -8,11 +8,7 @@
     $('#ApplicationName').val($.cookie('ApplicationName'));
 
     // Set Preferences defaults
-    if ($.cookie('HideAZ')) {
-        $('#HideAZ').attr('checked', true);
-    } else {
-        $('#HideAZ').attr('checked', false);
-    }
+    $('#HideAZ').attr('checked', true);
     if ($.cookie('EnableNotifications')) {
         $('#EnableNotifications').attr('checked', true);
     } else {
@@ -561,58 +557,50 @@
             $.cookie('ApplicationName', applicationname, { expires: 365 });
         }
         location.reload(true);
-    });
-    $('#HideAZ').live('click', function () {
-        if ($('#HideAZ').is(':checked')) {
-            $.cookie('HideAZ', '1', { expires: 365 });
-            $('#BottomContainer').hide();
-        } else {
-            $.cookie('HideAZ', null);
-            $('#BottomContainer').show();
-        }
-    });
-    $('#EnableNotifications').live('click', function () {
-        if ($('#EnableNotifications').is(':checked')) {
-            requestPermissionIfRequired();
-            if (hasNotificationPermission()) {
-                $.cookie('EnableNotifications', '1', { expires: 365 });
-            }
-        } else {
-            $.cookie('EnableNotifications', null);
-        }
-    });
-    $('#ScrollTitle').live('click', function () {
-        if ($('#ScrollTitle').is(':checked')) {
-            $.cookie('ScrollTitle', '1', { expires: 365 });
-        }
-    });
-    $('#Debug').live('click', function () {
-        if ($('#Debug').is(':checked')) {
-            $.cookie('Debug', '1', { expires: 365 });
-            debug = true;
-        }
-    });
-    $('input#Password').keydown(function (e) {
-        var unicode = e.charCode ? e.charCode : e.keyCode;
-        if (unicode == 13) {
-            $('#SavePreferences').click();
-        }
-    });
-    $('#ResetPreferences').live('click', function () {
-        $.cookie('username', null);
-        $.cookie('password', null);
-        $.cookie('AutoAlbumSize', null);
-        $.cookie('AutoPlaylistSize', null);
-        $.cookie('Server', null);
-        $.cookie('ApplicationName', null);
-        $.cookie('HideAZ', null);
-        location.reload(true);
-    });
-    $('#ChangeLogShowMore').live('click', function () {
-        $('ul#ChangeLog li.log').each(function (i, el) {
-            $(el).show();
-        });
-        return false;
-    });
+	});
+	$('#BottomContainer').hide();
+	$('#EnableNotifications').live('click', function () {
+		if ($('#EnableNotifications').is(':checked')) {
+			requestPermissionIfRequired();
+			if (hasNotificationPermission()) {
+				$.cookie('EnableNotifications', '1', { expires: 365 });
+			}
+		} else {
+			$.cookie('EnableNotifications', null);
+		}
+	});
+	$('#ScrollTitle').live('click', function () {
+		if ($('#ScrollTitle').is(':checked')) {
+			$.cookie('ScrollTitle', '1', { expires: 365 });
+		}
+	});
+	$('#Debug').live('click', function () {
+		if ($('#Debug').is(':checked')) {
+			$.cookie('Debug', '1', { expires: 365 });
+			debug = true;
+		}
+	});
+	$('input#Password').keydown(function (e) {
+		var unicode = e.charCode ? e.charCode : e.keyCode;
+		if (unicode == 13) {
+			$('#SavePreferences').click();
+		}
+	});
+	$('#ResetPreferences').live('click', function () {
+		$.cookie('username', null);
+		$.cookie('password', null);
+		$.cookie('AutoAlbumSize', null);
+		$.cookie('AutoPlaylistSize', null);
+		$.cookie('Server', null);
+		$.cookie('ApplicationName', null);
+		$.cookie('HideAZ', null);
+		location.reload(true);
+	});
+	$('#ChangeLogShowMore').live('click', function () {
+		$('ul#ChangeLog li.log').each(function (i, el) {
+			$(el).show();
+		});
+		return false;
+	});
 
 });      // End document.ready

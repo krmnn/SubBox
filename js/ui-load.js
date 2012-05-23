@@ -1,13 +1,6 @@
 ﻿$(window).load(function () {
     resizeSMSection(60);
-    if ($.cookie('sidebar') && $.cookie('username') && $.cookie('password')) {
-        $('#SideBar').show();
-        updateChatMessages();
-        updateNowPlaying();
-    }
-    if ($.cookie('HideAZ')) {
-        $('#BottomContainer').hide();
-    }
+    $('#BottomContainer').hide();
     $('ul#ChangeLog li.log').each(function (i, el) {
         if (i > 3) {
             $(el).hide();
@@ -45,7 +38,6 @@ function resizeSMSection(x) {
     if (smwidth != newsmwidth && newsmwidth > 150 && newsmwidth < 500) {
         $('.smsection').css({ 'width': (newsmwidth - 15 ) + 'px' });
         $('.actions').css({ 'width': (newsmwidth - 5) + 'px' });
-        $('#BottomContainer').css({ 'width': (newsmwidth - 16) + 'px' });
         $.cookie('defaultsmwidth', newwidth, { expires: 365, path: '/' });
         var ulwidth = newsmwidth + 6 - 25;
         $('#AlbumContainer').css({ 'margin-left': ulwidth + 'px' });
