@@ -50,8 +50,7 @@ h3.title
 #nav 
 {
     height: 127px;
-    padding: 44px 0 0 0;
-    background: url('../images/subsonic-36.png') no-repeat 6px 4px;
+    padding: 20px 0 0 0;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -191,7 +190,7 @@ h3.title
     overflow: auto;
     background-color: #fff;
     border: 1px solid #cbcbcb;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 .fullsection
 {
@@ -202,7 +201,7 @@ h3.title
     overflow: auto;
     background-color: #fff;
     border: 1px solid #cbcbcb;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 .padder
 {
@@ -1099,10 +1098,10 @@ label
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgba(77,77,79,0.8); 
+    background: rgba(200,200,200,0.8); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(99,99,100,0.4); 
+	background: rgba(200,200,200,0.4); 
 }
 
 
