@@ -760,7 +760,7 @@ background-color: #8dbdd8;
 }
 .audiojs 
 {
-    width: auto;
+    width: 500px;
     height: 50px;
     margin: 20px 0 0 0;
     font-family: inherit;
@@ -778,7 +778,7 @@ background-color: #8dbdd8;
     height: 14px;
     margin: 0px 0px 0px 5px;
     float: middle;
-    width: 330px;
+    width: 500px;
     position: relative;
     background-color: #5A5A5A;
     border: 1px solid #3F3F3F;
@@ -798,7 +798,7 @@ background-color: #8dbdd8;
 }
 .audiojs .loaded 
 {
-    position: absolute;
+    position: absolute000;
     top: 0px;
     left: 0px;
     height: 14px;
@@ -843,7 +843,7 @@ background-color: #8dbdd8;
 }
 #playermiddle
 {
-    width: 100%;
+    width: auto;
     /*visibility: hidden;*/
 
 }
@@ -861,7 +861,7 @@ height: 100px;
 }
 #songdetails
 {
-    width: 500px;
+    width: 650px;
     margin: 0 8px;
     float: left;
     visibility: hidden;
