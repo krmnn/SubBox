@@ -515,7 +515,7 @@ table.songlist tr.playing
 {
     background-color: #DEEBFA;
 	color: #000000;
-	font-style: italic;
+	font-style: bold;
 }
 
 table.songlist tr.selected
@@ -1000,6 +1000,10 @@ a.button:active {
     color: #000;
     border-color: #444;
 }
+a.button span
+{
+	padding-left: 10px;
+}
 .shadow
 {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
@@ -1082,6 +1086,11 @@ label
 {
     float: left;
     margin: 5px 5px 0 5px;
+}
+
+.prefactions a
+{
+	margin: 5px;
 }
 
 
