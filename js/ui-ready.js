@@ -497,7 +497,7 @@
 	/// Volume Click events
 	$('#VolumeDown').live('click', function () {
 		var globalvol = soundManager.defaultOptions.volume;
-		var newvol = globalvol - 5;
+		var newvol = globalvol - 10;
 		if (newvol < 0) {
 			newvol = 0;
 		}
@@ -506,7 +506,7 @@
     });
 	$('#VolumeUp').live('click', function () {
 		var globalvol = soundManager.defaultOptions.volume;
-		var newvol = globalvol + 5;
+		var newvol = globalvol + 10;
 		if (newvol > 100) {
 			newvol = 100;
 		}
