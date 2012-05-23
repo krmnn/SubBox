@@ -1107,4 +1107,39 @@ label
 #NextTrack
 {
 	top: -10px;
+}
+
+.volumebuttons 
 {
+}
+
+#VolumeDown
+{
+    float: left;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 4px;
+    background: url('../images/minus_32x8.png') no-repeat center 50%;
+	clear: both;
+}
+#VolumeDown:hover
+{
+    background: url('../images/minus_dark_32x8.png') no-repeat center 50%;
+}
+
+#VolumeUp
+{
+    float: left;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 4px;
+    background: url('../images/plus_32x32.png') no-repeat center 50%;
+}
+#VolumeUp:hover
+{
+    background: url('../images/plus_dark_32x32.png') no-repeat center 50%;
+}
+
+

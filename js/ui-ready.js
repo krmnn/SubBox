@@ -493,6 +493,28 @@
         return false;
     });
 
+
+	/// Volume Click events
+	$('#VolumeDown').live('click', function () {
+		var globalvol = soundManager.defaultOptions.volume;
+		var newvol = globalvol - 5;
+		if (newvol < 0) {
+			newvol = 0;
+		}
+        setVolume(newvol);
+        return false;
+    });
+	$('#VolumeUp').live('click', function () {
+		var globalvol = soundManager.defaultOptions.volume;
+		var newvol = globalvol + 5;
+		if (newvol > 100) {
+			newvol = 100;
+		}
+        setVolume(newvol);
+        return false;
+    });
+
+
     // Side Bar Click Events
     $('#action_ToggleSideBar').live('click', function () {
         if ($.cookie('sidebar')) {

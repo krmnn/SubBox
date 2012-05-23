@@ -204,3 +204,10 @@ function autoPlay() {
     var albumid = $(firstsong).attr('parentid');
     playSong(firstsong, songid, albumid);
 }
+
+function setVolume(newval) {
+	for (var i=soundManager.soundIDs.length; i--;) { 
+		soundManager.setVolume(soundManager.soundIDs[i], newval); 
+	} 
+	soundManager.defaultOptions.volume = newval;
+}
