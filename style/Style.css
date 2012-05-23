@@ -1093,10 +1093,10 @@ label
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgba(75,149,229,0.8); 
+    background: rgba(77,77,79,0.8); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(200,200,200,0.4); 
+	background: rgba(99,99,100,0.4); 
 }
 
 #PreviousTrack
@@ -1120,12 +1120,8 @@ label
     height: 40px;
     display: block;
     margin: 4px;
-    background: url('../images/minus_32x8.png') no-repeat center 50%;
-	clear: both;
-}
-#VolumeDown:hover
-{
     background: url('../images/minus_dark_32x8.png') no-repeat center 50%;
+	clear: both;
 }
 
 #VolumeUp
@@ -1135,11 +1131,6 @@ label
     height: 40px;
     display: block;
     margin: 4px;
-    background: url('../images/plus_32x32.png') no-repeat center 50%;
-}
-#VolumeUp:hover
-{
     background: url('../images/plus_dark_32x32.png') no-repeat center 50%;
 }
-
 
