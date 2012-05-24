@@ -16,12 +16,12 @@ $(window).resize(function () {
 });
 function resizeContent() {
     var screenwidth = $(window).width();
-    $('.tabcontent').css({ 'height': (($(window).height() - 170)) + 'px' });
-    $('.smsection').css({ 'height': (($(window).height() - 214)) + 'px' });
+    $('.tabcontent').css({ 'height': (($(window).height() - 174)) + 'px' });
+    $('.smsection').css({ 'height': (($(window).height() - 215)) + 'px' });
     var smheight = $('.smsection').height();
     var smwidth = $('.smsection').width();
     $('#BottomContainer').css({ 'top': (smheight - 100) +  'px' });
-    var tabwidth = $(window).width() - 170;
+    var tabwidth = $(window).width() - 160;
     if (tabwidth >= 700) {
         $('.tabcontent').css({ 'width': tabwidth + 'px' });
     }

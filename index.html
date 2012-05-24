@@ -169,17 +169,18 @@
 				<!-- Audio Player -->
 				<div class="clear"></div>
 				<div id="player">
-					<div id="playerleft" class="floatleft">
-						<div class="playeractions floatleft">
+					<div id="playerleft">
+						<div class="playeractions">
 							<a href="#" class="button" id="PreviousTrack" title="Previous Track"><img src="images/first.png" /></a>
 							<a href="#" class="button" id="PlayTrack" title="Play/Pause"><img src="images/play.png" /></a>
 							<a href="#" class="button" id="NextTrack" title="Next Track"><img src="images/last.png" /></a>
 						</div>
+					</div>
+					<div id="playermiddle">
+						<div id="coverart"><a id="coverartimage"><img src="images/albumdefault_56.jpg" alt=""/></div>
 						<div id="songdetails">
-							<div id="coverart"><a id="coverartimage" href="images/albumdefault_120.jpg"><img src="images/albumdefault_56.jpg" alt=""/></a></div>
-							<div id="songdetails_song" class="song"></div>
-							<div id="songdetails_artist" class="album"></div>
-
+							<div id="songdetails_song" class="song">Untitled</div>
+							<div id="songdetails_artist" class="album">Unknown</div>
 							<div class="audiojs" id="audio_wrapper0">
 								<div class="scrubber">
 									<div class="progress"></div>
@@ -189,10 +190,11 @@
 							</div>
 						</div> 
 					</div>
-					<div class="playermiddle">
-						<div class="volumebuttons floatright">
-							<a href="#" class="button" id="VolumeUp" title="Volume up"></a>
-							<a href="#" class="button" id="VolumeDown" title="Volume down"></a>
+
+					<div id="playerright">
+						<div id="volumebuttons">
+							<a href="#" class="button"  id="VolumeUp" title="Volume up"></a>
+							<a href="#" class="button"  id="VolumeDown" title="Volume down"></a>
 						</div>
 					</div>
 				</div>
