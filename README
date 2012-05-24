@@ -6,8 +6,12 @@ SubBox - A modification to tsquillario's MiniSub player for touchscreen jukebox 
 - removed advanced playlist stuff
 
 
-TODO: make it work on other resolutions than 1280x1024...
-
+TODO: 
+- proper alignment of player
+- display volume state / slider 
+- give play progress more height
+- youtube support? (text input?)
+- display news (via google reader rss export?)
 
 
 
