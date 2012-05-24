@@ -400,7 +400,7 @@ table.songlist tr.album td.albumart
 }
 table.songlist tr.album td.albumart img
 {
-    margin: 5px 10px 0 10px;
+    margin: 5px 15px 0 5px;
     padding: 2px;
     border: 1px solid #DEDEDE;
 }
