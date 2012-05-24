@@ -179,7 +179,7 @@ h3.title
     border-right: 1px solid #cbcbcb;
     position: absolute;
     top: 22px;
-    left: 160px;
+    left: 155px;
 }
 .lgsection
 {
@@ -391,7 +391,7 @@ table.songlist tr.album td.artist
 table.songlist tr.album td.itemactions
 {
     width: 100px;
-    padding-left: 10px;
+    padding-left: 14px;
 }
 table.songlist tr.album td.albumart
 {
@@ -443,7 +443,7 @@ table.songlist tr.song td
 table.songlist tr.song td.itemactions
 {
     width: 100px;
-    padding-left: 27px;
+    padding-left: 14px;
 }
 table.songlist tr.song td.track
 {
