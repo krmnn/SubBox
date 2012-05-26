@@ -28,7 +28,11 @@ function resizeContent() {
     var tabwidth = $('.tabcontent').width();
     $('#AlbumContainer, #TrackContainer, #CurrentPlaylistContainer').css({ 'width': (tabwidth - smwidth - 50) + 'px' });
     $('#CurrentPlaylistContainer').css({ 'width': (tabwidth - 50) + 'px' });
-    $('#player').css({ 'width': tabwidth + 'px' });
+	$('#player').css({ 'width': tabwidth + 'px' });
+	detailwidth = tabwidth - (3 * 120 + 120 + 80 + 30); 
+    $('#songdetails').css({ 'width': detailwidth + 'px' });
+
+    $('.audiojs').css({ 'width': (detailwidth - 25)+ 'px' });
 }
 function resizeSMSection(x) {
     var defwidth = 200;

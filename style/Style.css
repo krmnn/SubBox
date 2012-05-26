@@ -786,13 +786,12 @@ background-color: #8dbdd8;
 .audiojs 
 {
 	display: table-cell;
-	margin: 15px 10px 10px 10px;
+	margin: 15px 0 10px 10px;
 	font-family: inherit;
 	font-size: 10px;
 	box-shadow: none;
 	overflow: hidden;
 	float: left;
-	width: 96%;
 }
 .audiojs .play-pause
 {
@@ -872,7 +871,6 @@ background-color: #8dbdd8;
 	float: left; 
 	margin: 0 4px 0 4px;
 	height: 100%;
-	width: 400px;
 }
 
 #songdetails_song
