@@ -11,5 +11,6 @@
    },
    "name": "SubBox",
    "permissions": [ "unlimitedStorage", "notifications" ],
+   "manifest_version": 2,
    "version": "1.0.0"
 }
